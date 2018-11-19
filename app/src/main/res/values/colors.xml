@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="right_bubble">#03c9df</color>
+    <color name="left_bubble">#f3f6f5</color>
+    <color name="button">#27c5e0</color>
+    <color name="colorprimary">#1ac8dc</color>
+    <color name="left_bubble_link">#f7793f</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#e6e4e4</color>
+
+
+
+    <color name="online_color">#2dcc0e</color>
+    <color name="ofline_color">#dc3b0f</color>
+</resources>

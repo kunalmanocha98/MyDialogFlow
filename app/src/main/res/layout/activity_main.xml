@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="4dp"
+                android:paddingTop="8dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/send_message_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/send_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/image_view_bg"
+                        android:padding="12dp"
+                        android:src="@drawable/send"
+                        android:tint="@color/white" />
+
+                    <!-- <ImageView
+                         android:id="@+id/record_btn"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp"
+                         android:padding="12dp"
+                         android:layout_alignParentRight="true"
+                         android:src="@drawable/microphone" />-->
+                    <EditText
+                        android:id="@+id/edttxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toLeftOf="@id/send_btn"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="Enter your message"
+                        android:paddingLeft="32dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp" />
+                </RelativeLayout>
+
+                <com.agnitioworld.chatbot.AutoSpacingViewLayout
+                    android:id="@+id/autospacing_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.agnitioworld.chatbot.AutoSpacingViewLayout>
+                <!--<android.support.v7.widget.RecyclerView
+                    android:id="@+id/suggestions_recycler_view"
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>-->
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottom_layout"
+                android:background="@color/white"
+                android:padding="4dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
