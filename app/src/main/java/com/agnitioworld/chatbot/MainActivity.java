@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         send_btn = findViewById(R.id.send_btn);
         coordinatorLayout = findViewById(R.id.coordinator);
         input_text = findViewById(R.id.edttxt);
@@ -278,11 +280,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         @Override
         public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-            }
+        }
 
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-            }
+        }
 
         @Override
         public void afterTextChanged(Editable editable) {
@@ -293,4 +295,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
     }
+
+
+
 }

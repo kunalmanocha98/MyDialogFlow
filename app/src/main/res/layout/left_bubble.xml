@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:padding="12dp"
+            android:autoLink="all"
             android:text="Hello i am your chat bot on left" />
     </RelativeLayout>
 
